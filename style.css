@@ -97,6 +97,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    object-fit: cover;
 }
 
 .showcase_container {
@@ -106,6 +107,7 @@ body {
     justify-content: center;
     height: 100%;
     font-size: 1.6rem;
+    gap: 2rem;
 }
 
 .showcase_container h1 {
@@ -144,7 +146,9 @@ body {
 .aboutus_sec .about_contain{
     display: flex;
     border: 2px solid red;
+    gap: 2rem;
 }
+
 .about_contain{
     border: 3px solid red;
     width: 90%;
@@ -166,13 +170,22 @@ body {
     height: 50vh;
     width: 100%;
     object-fit: cover;
+    transform: translate(-150%);   
+    animation: aboutus_sec_a 1s ease-in-out forwards;
 } 
+@keyframes aboutus_sec_a{
+    100%{
+        transform: translate(0);
+    }
+}
 
 .aboutus_sec .about_contain .Text{
     width: 100%;
     flex-direction: column; 
     border: 2px solid blue;
     padding: 1rem; 
+    transform: translate(150%);   
+    animation: aboutus_sec_a 1.5s ease-in-out forwards;
  } 
 
 .aboutus_sec .about_contain .Text .main_head{
@@ -184,3 +197,40 @@ body {
     padding: 1rem 0 ;
     font-size: 1.2rem;
 }
+
+/* ########### Types ############### */
+
+.types .about_contain{
+    display: flex;
+    border: 2px solid red;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+.types .about_contain .type-Veg img{
+    flex-direction: column;
+    border: 2px solid pink;
+    object-fit: cover;
+    width: 400px;
+    height: 50vh;
+    border-radius: 100px;
+    background-size: 80%;
+    justify-content: center;
+    padding: 2rem;
+    margin:  auto;
+}
+
+.types .about_contain .type-NonVeg img{
+    flex-direction: column;
+    border: 2px solid pink;
+    object-fit: cover;
+    width: 400px;
+    height: 50vh;
+    border-radius: 100px;
+    background-size: 80%;
+    justify-content: center;
+    padding: 2rem;
+    margin:  auto;
+/* transform: translate(150%);   
+animation: aboutus_sec_a 1.5s ease-in-out forwards; */
+} 
