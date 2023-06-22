@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800&display=swap');
+
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ####### utility class##### */
+
+.navbar_contain {
+    border: 3px solid red;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sub_head{
+    font-size: 1.2rem;
+}
+
+/* ######### NavBar Styling ##########  */
+
+/* for Destop */
+
+.nav_bar .navbar_contain input[type='checkbox'],
+.nav_bar .navbar_contain .hamburger {
+    display: none;
+}
+
+.nav_bar {
+    box-shadow: 0px 5px 10px 0 #aaa;
+    position: fixed;
+    width: 100%;
+    background-color: #646464;
+    color: #000;
+    opacity: 0.85;
+    z-index: 10;
+}
+
+.nav_bar .navbar_contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+.menu_list {
+    order: 2;
+}
+
+.logo {
+    order: 1;
+    font-size: 3rem;
+}
+
+.nav_bar .navbar_contain .menu_list {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.6rem;
+    font-size: 1.6rem;
+}
+
+.nav_bar .navbar_contain li {
+    list-style: none;
+    margin-left: 1.5rem;
+}
+
+.nav_bar .navbar_contain .menu_list a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    font-weight: 400;
+}
+
+.nav_bar .navbar_contain .menu_list a:hover {
+    color: #f5f5f5;
+    font-weight: 600;
+}
+
+/* ############## Section ############# */
+.showcase {
+    border: 2px solid blue;
+    height: 65vh;
+    background: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-black-meat-western-food-banner-background-image_194600.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.showcase_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+}
+
+.showcase_container h1 {
+    color: #f5f5f5;
+    text-transform: uppercase;
+}
+
+.showcase_container p {
+    color: #f5f5f5;
+    padding: 0.5rem;
+}
+
+.showcase_container .btn-prim {
+    display: inline-block;
+    background-color: #646464;
+    padding: 0.8rem 2rem;
+    margin: 1rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.showcase_container a {
+    text-decoration: none;
+    color: #000;
+    transition: color 1s ease-in-out;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.showcase_container a:hover {
+    color: #f5f5f5;
+    font-weight: 600;
+}
+
+
+/* ############ Aboutus _section ############ */
+.aboutus_sec .about_contain{
+    display: flex;
+    border: 2px solid red;
+}
+.about_contain{
+    border: 3px solid red;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+
+
+.aboutus_sec .about_contain .img{
+    border: 2px solid blue;
+    padding: 1rem;
+    margin: auto; 
+    background: url('https://t4.ftcdn.net/jpg/02/28/28/15/360_F_228281535_DbxC98AAXl0TOe2TcasxiUU53s7etqox.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+} 
+
+.aboutus_sec .about_contain .Text{
+    width: 100%;
+    flex-direction: column; 
+    border: 2px solid blue;
+    padding: 1rem; 
+ } 
+
+.aboutus_sec .about_contain .Text .main_head{
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.aboutus_sec .about_contain .Text p{
+    padding: 1rem 0 ;
+    font-size: 1.2rem;
+}
