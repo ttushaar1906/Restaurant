@@ -20,7 +20,6 @@ body {
 /* ####### utility class##### */
 
 .navbar_contain {
-    border: 3px solid red;
     width: 90%;
     max-width: 1200px;
     margin: auto;
@@ -28,6 +27,15 @@ body {
 
 .sub_head{
     font-size: 1.2rem;
+}
+
+.btn-prim {
+    display: inline-block;
+    background-color: #646464;
+    padding: 0.8rem 2rem;
+    margin: 1rem;
+    transition: color 0.2s ease-in-out;
+    border-radius: 50px;
 }
 
 /* ######### NavBar Styling ##########  */
@@ -91,7 +99,6 @@ body {
 
 /* ############## Section ############# */
 .showcase {
-    border: 2px solid blue;
     height: 65vh;
     background: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-black-meat-western-food-banner-background-image_194600.jpg");
     background-repeat: no-repeat;
@@ -120,13 +127,7 @@ body {
     padding: 0.5rem;
 }
 
-.showcase_container .btn-prim {
-    display: inline-block;
-    background-color: #646464;
-    padding: 0.8rem 2rem;
-    margin: 1rem;
-    transition: color 0.2s ease-in-out;
-}
+
 
 .showcase_container a {
     text-decoration: none;
@@ -145,12 +146,11 @@ body {
 /* ############ Aboutus _section ############ */
 .aboutus_sec .about_contain{
     display: flex;
-    border: 2px solid red;
     gap: 2rem;
 }
 
 .about_contain{
-    border: 3px solid red;
+    /* border: 3px solid red; */
     width: 90%;
     max-width: 1200px;
     margin: auto;
@@ -159,8 +159,7 @@ body {
 
 
 
-.aboutus_sec .about_contain .img{
-    border: 2px solid blue;
+.aboutus_sec .about_contain .imgh{
     padding: 1rem;
     margin: auto; 
     background: url('https://t4.ftcdn.net/jpg/02/28/28/15/360_F_228281535_DbxC98AAXl0TOe2TcasxiUU53s7etqox.jpg');
@@ -182,7 +181,6 @@ body {
 .aboutus_sec .about_contain .Text{
     width: 100%;
     flex-direction: column; 
-    border: 2px solid blue;
     padding: 1rem; 
     transform: translate(150%);   
     animation: aboutus_sec_a 1.5s ease-in-out forwards;
@@ -195,42 +193,148 @@ body {
 
 .aboutus_sec .about_contain .Text p{
     padding: 1rem 0 ;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 /* ########### Types ############### */
 
 .types .about_contain{
     display: flex;
-    border: 2px solid red;
     gap: 2rem;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.types .about_contain .type-Veg img{
-    flex-direction: column;
-    border: 2px solid pink;
+.types .about_contain img{
+    /* border: 2px solid pink; */
     object-fit: cover;
-    width: 400px;
+    object-position: center;
+    width: 550px;
+    max-height: 300px;
     height: 50vh;
     border-radius: 100px;
-    background-size: 80%;
-    justify-content: center;
     padding: 2rem;
     margin:  auto;
+    display: block;
 }
 
-.types .about_contain .type-NonVeg img{
-    flex-direction: column;
-    border: 2px solid pink;
-    object-fit: cover;
-    width: 400px;
-    height: 50vh;
+
+.types .about_contain .img{
+    position: relative;
+}
+
+.types .about_contain .content{
+    position: absolute;
+    font-size: 3rem;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 2;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0.1s;
+}
+.types .about_contain .content:hover{
+    opacity: 1;
+}
+
+.img::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000c7;
+    opacity: 0;
+    z-index: 1;
+    transform: scaleY(0);
+    transform-origin:100% 100% ;
+    transition: all 0.3s ease-in-out;
+}
+
+.img:hover::after{
+    opacity: 1;
+    transform: scaleY(1);
     border-radius: 100px;
-    background-size: 80%;
+}
+
+.img:hover .content{
+    opacity: 1;
+    top: 50%;
+}
+
+.types h1{
+    text-align: center;
+    padding: 3rem;
+    margin: 2rem;
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.types .about_contain .content a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
     justify-content: center;
-    padding: 2rem;
-    margin:  auto;
-/* transform: translate(150%);   
-animation: aboutus_sec_a 1.5s ease-in-out forwards; */
-} 
+}
+
+
+.types p{
+ font-size: 2rem;  
+ font-weight: 600;
+ color: #f5f5f5;
+}
+
+.types .about_contain .content a:hover {
+    color: #f5f5f5;
+    font-weight: 600;
+}
+
+/* ########## Menu Lists styling ############ */
+
+.menu h1{
+    text-align: center;
+    padding: 3rem;
+    margin: 2rem;
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+.menu-list .memu-lists{
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    flex-wrap: wrap;
+    max-width: 600px;
+}
+
+.menu-lists .menu-img{
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-lists .menu-img img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    margin: auto;
+    display: block;
+}
+.menu-lists .menu-cont{
+    border: 2px solid rgb(0, 255, 119);
+    display: flex;
+    flex-wrap: wrap;
+}
