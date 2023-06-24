@@ -132,7 +132,7 @@ body {
 .showcase_container a {
     text-decoration: none;
     color: #000;
-    transition: color 1s ease-in-out;
+    transition: color 0.5s ease-in-out;
     border-radius: 6px;
     font-weight: 600;
 }
@@ -306,35 +306,199 @@ body {
     font-weight: 600;
     text-transform: uppercase;
 }
-.menu-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    justify-items: center;
-}
-.menu-list .memu-lists{
-    display: flex;
-    justify-content: space-evenly;
-    justify-items: center;
-    flex-wrap: wrap;
-    max-width: 600px;
-}
 
-.menu-lists .menu-img{
-    border: 2px solid red;
+ .menu-list {
+    display: flex;
+     flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: space-between;
+} 
+
+.menu-lists {
     display: flex;
     flex-wrap: wrap;
+     margin: auto;
+    /* border: 2px solid blue; */
+    margin-bottom: 2rem;
+    max-width: 1200px;
 }
 .menu-lists .menu-img img{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height:300px;
+    /* border: 2px solid red; */
+    background-size: 100%;
     object-fit: cover;
     object-position: center;
-    margin: auto;
     display: block;
+    border-radius: 10%;
 }
+
 .menu-lists .menu-cont{
-    border: 2px solid rgb(0, 255, 119);
+   display: block;
+    padding: 1rem;
+    width: 250px;
+    height:300px;
+    margin-left: 1rem;
+}
+
+.menu-cont .menu-name {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.menu-head{
+    font-size: 1.3rem;
+    padding-left: 0.5rem;
+    margin: 1rem;
+}
+
+.price-dish{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000;
+    margin-left: 1rem;
+}
+
+
+/* ########### feedback styling ########## */
+.feed p{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.rating h1{
+    text-align: center;
+    padding: 3rem;
+    margin: 2rem;
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.feedback{
+    display: flex;
+    border: 2px solid red;
+    background-color: #f5f5f5;
+}
+
+.star{
+    margin: 1.6rem;
+}
+
+.star i{
+    margin: auto;
+    object-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+.cust-feed{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid greenyellow;
+
+}
+.feed-img img{
+    width: 100px;
+    align-items: center;
+    height: 110px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    padding: 1rem;
+}
+
+.feed p{
+    font-size: 1.6rem;
+    padding: 2rem;
+}
+
+/* ##### Contact Us ########## */
+
+.contact{
+    display: flex;
+    /* border: 2px solid purple; */
+}
+.contact-img .contact-img{
+    width: 600px;
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+.contact-img img{
+    width: 600px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    margin: 1rem;
+    height: 95%;
+}
+
+.contact-det h1{
+    font-size: 3rem;
+    /* padding: 2rem; */
+    font-weight: 500;
+    margin: 1rem;
+}
+
+.contact-det input{
+    display: block;
+    width: 90%;
+    margin:2rem;
+    padding: 1rem;
+}
+
+.contact-det label{
+    font-size: 1.6rem;
+    padding: 2rem;
+    margin: 1rem;
+    margin-top: 2rem;
+}
+.contact-det{
+    /* border: 2px solid palegreen; */
+    width: 500px;
+    margin: 1rem;
+}
+.btn-prim-sub{
+    text-align: center;
+    background-color: #646464;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #f5f5f5;
+    padding: 0.4rem;
+    margin: 0.5rem;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: block;
+}
+
+/* ####### Footer ######## */
+.footers{
+    background-color: #646464;
+    width: 100%;
+    height: 80px;
+}
+
+.footers h2{
+    text-align: center;
+    color: #f5f5f5;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.footers i{
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
+}
+.ss{
+    justify-content: center;
+    align-content: center;
+    display: flex;
 }

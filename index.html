@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/0df6ecd121.js" crossorigin="anonymous"></script>
     <title>Restaurant</title>
 </head>
 
@@ -24,9 +22,9 @@
                 <li><a href=#>Home</a></li>
                 <li><a href=#aboutus>About Us</a></li>
                 <li><a href=#types>Category</a></li>
-                <li><a href=#>Menu</a></li>
-                <li><a href=#>Testimonial</a></li>
-                <li><a href=#>Contact US </a></li>
+                <li><a href=#menu>Menu</a></li>
+                <li><a href=#rating>Testimonial</a></li>
+                <li><a href=#contact_us>Contact US </a></li>
 
             </ul>
             <h1 class="logo">PD</h1>
@@ -36,7 +34,7 @@
         <div class="showcase_container">
             <h1 class="main_head">Healthy food makes you feel good.</h1>
             <p>When diet is wrong, medicine is of no use.</p>
-            <a href="#" class="btn btn-prim">Menu</a>
+            <a href="#menu" class="btn btn-prim">Menu</a>
         </div>
 
     </section>
@@ -69,7 +67,8 @@
                         alt="">
                     <div class="content">
                         <p>Vegetarian Food</p>
-                        <a href="#" class="btn-prim">Learn More</a>
+                        <a href="https://en.wikipedia.org/wiki/Vegetarian_cuisine#:~:text=Types%20of%20vegetarianism,-Lacto%2Dovo%20vegetarianism&text=Lacto%20vegetarianism%20includes%20dairy%20products,and%20whitened%20with%20bone%20char."
+                            class="btn-prim">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -80,71 +79,183 @@
                         alt="">
                     <div class="content">
                         <p>Non-Vegetarian Food</p>
-                        <a href="#" class="btn-prim">Learn More</a>
+                        <a href="https://en.wikipedia.org/wiki/Non-vegetarian_food_in_India#:~:text=Non%2Dvegetarian%20food%20(in%20Indian,India%2C%20but%20not%20usual%20elsewhere."
+                            class="btn-prim">Learn More</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-<section class="menu">
-    <h1>Food Menu</h1>
+    <section class="menu" id="menu">
+        <h1>Food Menu</h1>
         <div class="menu-list about_contain">
             <div class="menu-lists">
                 <div class="menu-img">
-                    <img src="https://media.istockphoto.com/id/1186759790/photo/paneer-tikka-at-skewers-in-black-bowl-at-dark-slate-background-paneer-tikka-is-an-indian.jpg?s=612x612&w=0&k=20&c=cITToqM1KEnrixXjoLhEciqP24SxdKtW3QXykq-W5OE=" alt="Paneer Tikka">
+                    <img src="https://media.istockphoto.com/id/1186759790/photo/paneer-tikka-at-skewers-in-black-bowl-at-dark-slate-background-paneer-tikka-is-an-indian.jpg?s=612x612&w=0&k=20&c=cITToqM1KEnrixXjoLhEciqP24SxdKtW3QXykq-W5OE="
+                        alt="Paneer Tikka">
                 </div>
                 <div class="menu-cont">
                     <h3 class="menu-name">Paneer Tikka</h3>
+                    <p class="menu-head">Tikka basically means anything that is marinated and then baked or grilled or
+                        fried and paneer tikka is a popular vegetarian tikka dish.</p>
+                    <p class="price-dish">Price: <i class="fa-solid fa-indian-rupee-sign"></i> 200</p>
                 </div>
             </div>
 
             <div class="menu-lists">
                 <div class="menu-img">
-                    <img src="https://img.freepik.com/free-photo/closeup-shot-deliciously-prepared-chicken-served-with-onions-chili-sauce_181624-61705.jpg" alt="Chicken Tandoori">
+                    <img src="https://img.freepik.com/free-photo/closeup-shot-deliciously-prepared-chicken-served-with-onions-chili-sauce_181624-61705.jpg"
+                        alt="Chicken Tandoori">
                 </div>
                 <div class="menu-cont">
                     <h3 class="menu-name">Chicken Tandoori</h3>
+                    <p class="menu-head">Chicken Tandoori is a popular and flavorful Indian dish known for its vibrant
+                        colors and aromatic flavors.</p>
+                    <p class="price-dish">Price: <i class="fa-solid fa-indian-rupee-sign"></i> 300</p>
                 </div>
             </div>
-            
+
             <div class="menu-lists">
                 <div class="menu-img">
-                    <img src="https://cityspideynews.s3.amazonaws.com/uploads/spidey/202211/cover--tandoori-momos--credit-labpng-1668924349.png" alt="Tandoori Momos">
+                    <img src="https://cityspideynews.s3.amazonaws.com/uploads/spidey/202211/cover--tandoori-momos--credit-labpng-1668924349.png"
+                        alt="Tandoori Momos">
                 </div>
                 <div class="menu-cont">
                     <h3 class="menu-name">Tandoori Momos</h3>
+                    <p class="menu-head">Tandoori momos are a delicious and popular variation of momos, where the
+                        dumplings are marinated in a tandoori spice mixture and then cooked in a tandoor or oven.</p>
+                    <p class="price-dish">Price: <i class="fa-solid fa-indian-rupee-sign"></i> 100</p>
                 </div>
             </div>
 
             <div class="menu-lists">
                 <div class="menu-img">
-                    <img src="https://media.istockphoto.com/id/1314329942/photo/goal-gappa-or-pani-puri.jpg?s=612x612&w=0&k=20&c=l6akiKMfTLE9nR4VonhiOZpZGDY4aEjimAN-BSskF-A=" alt="Pani Puri">
+                    <img src="https://media.istockphoto.com/id/1314329942/photo/goal-gappa-or-pani-puri.jpg?s=612x612&w=0&k=20&c=l6akiKMfTLE9nR4VonhiOZpZGDY4aEjimAN-BSskF-A="
+                        alt="Pani Puri">
                 </div>
                 <div class="menu-cont">
                     <h3 class="menu-name">Pani Puri</h3>
+                    <p class="menu-head">Pani Puri consists of hollow, crispy puris (fried dough balls) filled with a
+                        tangy and spicy mixture of flavored water, mashed potatoes, chickpeas, onions, and chutneys.</p>
+                    <p class="price-dish">Price: <i class="fa-solid fa-indian-rupee-sign"></i> 100 (unlimited)</p>
                 </div>
             </div>
             <div class="menu-lists">
                 <div class="menu-img">
-                    <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2hpbmVzZSUyMGZvb2R8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt="Schezwan Noodles">
+                    <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2hpbmVzZSUyMGZvb2R8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
+                        alt="Schezwan Noodles">
                 </div>
                 <div class="menu-cont">
                     <h3 class="menu-name">Schezwan Noodles</h3>
+                    <p class="menu-head">Schezwan noodles are a spicy and flavorful Indo-Chinese dish that combines
+                        Chinese-style noodles with Szechuan (Sichuan) cuisine's bold and fiery flavors.</p>
+                    <p class="price-dish">Price: <i class="fa-solid fa-indian-rupee-sign"></i> 200</p>
                 </div>
             </div>
 
             <div class="menu-lists">
                 <div class="menu-img">
-                    <img src="https://media.istockphoto.com/id/1024558722/photo/group-of-south-indian-food-like-masala-dosa-uttapam-idli-idly-wada-vada-sambar-appam-semolina.jpg?s=612x612&w=0&k=20&c=cbuPAUzlnqlnXhZAa2NbLoSHLUi6OEaVFayHKRAYO7E=" alt="South Indian">
+                    <img src="https://media.istockphoto.com/id/1024558722/photo/group-of-south-indian-food-like-masala-dosa-uttapam-idli-idly-wada-vada-sambar-appam-semolina.jpg?s=612x612&w=0&k=20&c=cbuPAUzlnqlnXhZAa2NbLoSHLUi6OEaVFayHKRAYO7E="
+                        alt="South Indian">
                 </div>
                 <div class="menu-cont">
                     <h3 class="menu-name">South Indian Thali</h3>
+                    <p class="menu-head">
+                        A South Indian thali is a traditional meal consisting of a variety of dishes served on a banana
+                        leaf. It offers a balanced and wholesome culinary experience, showcasing the rich flavors and
+                        diverse range of South Indian cuisine.</p>
+                    <p class="price-dish">Price: <i class="fa-solid fa-indian-rupee-sign"></i> 250</p>
                 </div>
             </div>
         </div>
-</section>
+    </section>
 
+    <section class="rating" id="rating">
+        <h1>What Our Customers Say </h1>
+        <div class="feedback about_contain">
+            <div class="cust-feed">
+                <div class="star">
+                    <i class="fa-solid fa-star fa-2xl" style="color: #ffdd00;"></i>
+                    <i class="fa-solid fa-star fa-2xl" style="color: #ffdd00;"></i>
+                    <i class="fa-solid fa-star fa-2xl" style="color: #ffdd00;"></i>
+                    <i class="fa-solid fa-star fa-2xl" style="color: #ffdd00;"></i>
+                    <i class="fa-solid fa-star fa-2xl" style="color: #ffdd00;"></i>
+                </div>
+                <div class="feed">
+                    <p>What a Food!!! What a Place. Had an amazing time and food. </p>
+                </div>
+                <div class="feed-img">
+                    <img src="https://i.postimg.cc/j2nxLTL4/image.png" alt="">
+                </div>
+            </div>
+            <div class="cust-feed">
+                <div class="star">
+                    <i class="fa-solid fa-star fa-2xl" style="color: #ffdd00;"></i>
+                    <i class="fa-solid fa-star fa-2xl" style="color: #ffdd00;"></i>
+                    <i class="fa-solid fa-star fa-2xl" style="color: #ffdd00;"></i>
+                    <i class="fa-solid fa-star fa-2xl" style="color: #ffdd00;"></i>
+                    <i class="fa-solid fa-star fa-2xl" style="color: #cccccc;"></i>
+                </div>
+                <div class="feed">
+                    <p>Food Was Delicious. Would to like this taste Every Dish of this Restaurant </p>
+                </div>
+                <div class="feed-img">
+                    <img src="https://i.postimg.cc/gjmY3KNs/image.png" alt="">
+                </div>
+            </div>
+            <div class="cust-feed">
+                <div class="star">
+                    <i class="fa-solid fa-star fa-2xl" style="color: #ffdd00;"></i>
+                    <i class="fa-solid fa-star fa-2xl" style="color: #ffdd00;"></i>
+                    <i class="fa-solid fa-star fa-2xl" style="color: #ffdd00;"></i>
+                    <i class="fa-solid fa-star fa-2xl" style="color: #ffdd00;"></i>
+                    <i class="fa-solid fa-star fa-2xl" style="color: #ffdd00;"></i>
+
+                </div>
+                <div class="feed">
+                    <p>I'm The owner!! I know we prepare Quality Food at afordable price. </p>
+                </div>
+                <div class="feed-img">
+                    <img src="https://i.postimg.cc/pTJxkvPX/image.png" alt="">
+                </div>
+            </div>
+    </section>
+
+    <section class="contact about_contain" id="contact_us">
+        <div class="contact-img">
+            <img src="https://www.sunnysworldpune.com/sunnyworldpune.com/img/activities/The%20Ruby%20Restaurant.jpg"
+                alt="building">
+        </div>
+        <div class="contact-det">
+            <h1>
+                Contact Us
+            </h1>
+
+            <label>Name:-</label>
+            <input type="text" placeholder="Enter Your Name" required>
+
+            <label>Email:-</label>
+            <input type="email" placeholder="Enter Your email" required>
+
+            <label>Mobile Number:-</label>
+            <input type="number" placeholder="Enter Your Mobile Number" required>
+
+            <label>Message / Feedback:-</label>
+            <input type="textarea" placeholder="Enter Your Message" required>
+            <a href="#" class="btn-prim-sub">Submit</a>
+        </div>
+    </section>
+
+    <footer class="footers">
+        <h2>Restaurant Website &copy; all rights reserved</h2>
+        <div class="ss">
+        <a href="https://www.instagram.com/_tushaaaaaar_19/"><i class="fa-brands fa-instagram fa-2xl" style="color: #fffafa;"></i></a>
+        <a href="https://github.com/ttushaar1906"><i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i></a>
+
+        <a href="https://www.linkedin.com/in/tushar-tharwani-6527b5244/"><i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i></a>
+    </div>
+    </footer>
 </body>
 
 </html>
