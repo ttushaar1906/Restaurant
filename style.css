@@ -492,9 +492,10 @@ body {
 @media (max-width: 500px) {
 
     /* ####### Nav Bar ######  */
-     .nav_bar {
+     /* .nav_bar {
         opacity: 0.95;
         height: 50px;
+        width: 90%;
     }
 
     .nav_bar .navbar_contain[type='checkbox'],
@@ -603,19 +604,124 @@ body {
 
     .nav_bar .navbar_contain input[type='checkbox']:checked~.hamburger .line3 {
         transform: rotate(-45deg);
-    } 
+    }  */
+
+    .nav_bar {
+        opacity: 0.95;
+        height: 4.5rem;
+        width: 100%;
+    }
+
+    .nav_bar .navbar_contain[type='checkbox'],
+    .nav_bar .navbar_contain .hamburger {
+        display: block;
+    }
+
+    .nav_bar .navbar_contain {
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .nav_bar .navbar_contain input[type='checkbox'] {
+        position: relative;
+        display: block;
+        height: 35px;
+        width: 32px;
+        top: 8px;
+        /* left: 20px; */
+        z-index: 5;
+        opacity: 1;
+    }
+
+    .nav_bar .navbar_contain .hamburger {
+        display: block;
+        height: 32px;
+        width: 40px;
+        position: absolute;
+        top: 8px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .nav_bar .navbar_contain .hamburger .line {
+        display: block;
+        height: 3px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: #333;
+    }
+
+    .nav_bar .navbar_contain .hamburger .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .nav_bar .navbar_contain .hamburger .line2 {
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .nav_bar .navbar_contain .hamburger .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .nav_bar .menu_list {
+        padding-top: 100px;
+        background-color: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translateX(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 50px;
+        margin-top: -35px;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .nav_bar .menu_list li {
+        margin-bottom: 3rem;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .logo {
+        position: absolute;
+        font-size: 3rem;
+        top: 0px;
+        right: 15px;
+    }
+
+    .nav_bar .navbar_contain input[type='checkbox']:checked~.menu_list {
+        transform: translateX(0);
+    }
+
+    .nav_bar .navbar_contain input[type='checkbox']:checked~.hamburger .line1 {
+        transform: rotate(45deg);
+    }
+
+    .nav_bar .navbar_contain input[type='checkbox']:checked~.hamburger .line2 {
+        transform: scaleY(0);
+    }
+
+    .nav_bar .navbar_contain input[type='checkbox']:checked~.hamburger .line3 {
+        transform: rotate(-45deg);
+    }
+
+
+
 
     /* ############## Section ############# */
      .showcase {
-        height: 35vh;
-        /* height: 230px; */
-        /* background: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-black-meat-western-food-banner-background-image_194600.jpg"); */
-        width: 110%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100%;
-        object-fit: cover;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 25vh;
+        width: 545px;
     }
 
     .showcase_container {
@@ -664,19 +770,22 @@ body {
     } 
 
     /* ############ Aboutus _section ############ */
-    .aboutus_sec .about_contain {
+     .aboutus_sec .about_contain {
         display: flex;
         gap: 2rem;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        /* justify-content: center; */
     }
 
     .about_contain {
-        /* border: 3px solid red; */
-        width: 90%;
-        max-width: 500px;
-        margin: auto;
-        /* margin-top: 1.5rem; */
+        display: flex;
+        margin: 0 auto;
+        border: 3px solid red;
+        width: 80%; 
+        /* max-width: 500px; */
+         /* margin-top: 1.5rem;  */
     }
 
     .aboutus_sec .about_contain .imgh {
@@ -723,7 +832,7 @@ body {
         font-weight: 600;
     } 
 
-
+ 
 
     /* ########### Types ############### */
 
@@ -995,7 +1104,7 @@ body {
         align-content: center;
         display: flex;
     } 
-}
+
 
 
 
@@ -1102,6 +1211,21 @@ body {
         transform: rotate(-45deg);
     }
 
+  /* ############## Section ############# */
+  .showcase {
+    height: 45vh;
+    /* height: 230px; */
+    /* width: 80vh; */
+    background: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-black-meat-western-food-banner-background-image_194600.jpg");
+    /* width: 110%; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
     /* ######## contact us Styling  ########## */
 
     .contact {
@@ -1189,6 +1313,25 @@ body {
 
     }
 
+    .contact-det input {
+        display: block;
+        width: 90%;
+        margin: 2rem;
+        padding: 1rem;
+    }
+    
+    .contact-det label {
+        font-size: 1.6rem;
+        padding: 2rem;
+        margin: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .contact-det {
+        width: 500px;
+        margin: 1rem;
+    }
+    
     .contact-det h1 {
         font-size: 3rem;
         font-weight: 600;
@@ -1206,6 +1349,33 @@ body {
         text-align: center;
         font-size: 1.6rem;
     }
+/* ####### Footer ######## */
+.footers {
+    background-color: #646464;
+    width: 100%;
+    height: 80px;
+}
+
+.footers h2 {
+    text-align: center;
+    color: #f5f5f5;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.footers i {
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
+}
+
+.ss {
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+
 }
 
 
