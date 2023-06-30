@@ -536,7 +536,7 @@ body {
         align-items: center;
         justify-content: center;
         height: 20vh;
-        width: 95%;
+        width: 100%;
         /* background-size: 100%; */
     }
 
@@ -548,6 +548,7 @@ body {
         height: 100%;
         font-size: 1.6rem;
         gap: 2rem;
+        border: 2px solid blue;
     }
 
     .showcase_container h1 {
@@ -555,6 +556,7 @@ body {
         text-transform: uppercase;
         font-size: 1.4rem;
         text-align: center;
+        padding-top: 1rem;
     }
 
     .showcase_container p {
