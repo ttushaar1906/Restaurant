@@ -537,7 +537,7 @@ body {
         justify-content: center;
         height: 40vh;
         width: 95%;
-        border: 2px solid black;
+        background-size: 100%;
     }
 
     .showcase_container {
