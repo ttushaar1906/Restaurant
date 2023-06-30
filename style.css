@@ -491,7 +491,7 @@ body {
 /* ########### less than 500 ############# */
 @media (max-width: 500px) {
     .nav_bar {
-        max-width: 500px;
+        max-width: 400px;
         background-color:#f5f5f5;
         /* margin-top: -10px; */
         opacity: 0.95;
@@ -522,8 +522,8 @@ body {
     }
     .nav_bar .navbar_contain .hamburger {
         display: block;
-        height: 25px;
-        width: 40px;
+        height: 23px;
+        width: 30px;
         position: absolute;
         top: 4px;
         z-index: 2;
@@ -599,9 +599,11 @@ body {
 
     .nav_bar .navbar_contain .menu_list {
         display: flex;
-        justify-content: space-around;
-        gap: 2rem;
-        font-size: 1.6rem;
+        justify-content: flex-end;
+        gap: 3rem;
+        height: 660px;
+        font-size: 0.6rem;
+        width: 200px;
     }
 
 
