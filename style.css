@@ -511,13 +511,14 @@ body {
     }
 
     .nav_bar .navbar_contain input[type='checkbox'] {
-        position: relative;
+        position: absolute;
         display: block;
         height: 32px;
-        width: 40px;
-        top: -15px;
+        width: 50px;
+        /* top: -15px; */
         z-index: 5;
         opacity: 0;
+        cursor: pointer;
     }
     .nav_bar .navbar_contain .hamburger {
         display: block;
@@ -533,39 +534,40 @@ body {
 
     .nav_bar .navbar_contain .hamburger .line {
         display: block;
-        height: 4px;
+        height: 3px;
         width: 100%;
         border-radius: 10px;
         background-color: #333;
     }
     .nav_bar .navbar_contain .hamburger .line1 {
         transform-origin: 0% 0%;
-        transition: transform 0.4s ease-in-out;
+        transition: transform 0.3s ease-in-out;
     }
 
     .nav_bar .navbar_contain .hamburger .line2 {
-        transition: transform 0.4s ease-in-out;
+        transition: transform 0.2s ease-in-out;
     }
 
     .nav_bar .navbar_contain .hamburger .line3 {
         transform-origin: 0% 100%;
-        transition: transform 0.4s ease-in-out;
+        transition: transform 0.3s ease-in-out;
     }
     .nav_bar .menu_list {
-        /* padding-top: 100px; */
+        padding-top: 100px;
         background-color: #fff;
         height: 100vh;
         max-width: 300px;
         transform: translateX(-180%);
         display: flex;
-        /* flex-direction: column; */
+        flex-direction: column;
         margin-left: -40px;
-        padding-left: 50px;
+        padding-left: 40px;
         transition: transform 0.5s ease-in-out;
+        overflow: scroll;
     }
 
     .nav_bar .menu_list li {
-        margin-bottom: 3rem;
+        /* margin-bottom: 3rem; */
         font-size: 2rem;
         font-weight: 500;
         color: black;
@@ -588,9 +590,19 @@ body {
     }
 
 
+    /* a{
+        color: #444;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease-in-out;
+    } */
 
-
-
+    .nav_bar .navbar_contain .menu_list {
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+        font-size: 1.6rem;
+    }
 
 
 
@@ -668,7 +680,7 @@ body {
     }
 
     .about_contain {
-        border: 3px solid red;
+        /* border: 3px solid red; */
         /* width: 1200%; */
         max-width: 500px;
     }
