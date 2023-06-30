@@ -607,13 +607,14 @@ body {
 
 
     .nav_bar .navbar_contain .logo {
-        order: 2;
+        /* order: 2;
         font-size: 2rem;
         font-weight: 600;
         /* top: 0px; */
-        margin-top: -25px;
-        color: #000;
-    }
+        /* margin-top: -25px; */
+        /* /* color: #000;  */
+        display: none;
+    } 
 
     /* ############## Section ############# */
     .showcase {
