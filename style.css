@@ -491,7 +491,7 @@ body {
 /* ########### less than 500 ############# */
 @media (max-width: 500px) {
     .nav_bar {
-        max-width: 400px;
+        max-width: 405px;
         background-color:#f5f5f5;
         /* margin-top: -10px; */
         opacity: 0.95;
@@ -513,9 +513,9 @@ body {
     .nav_bar .navbar_contain input[type='checkbox'] {
         position: absolute;
         display: block;
-        height: 32px;
-        width: 50px;
-        /* top: -15px; */
+        height: 28px;
+        width: 34px;
+        top: 0px;
         z-index: 5;
         opacity: 0;
         cursor: pointer;
@@ -604,6 +604,7 @@ body {
         height: 660px;
         font-size: 0.6rem;
         width: 200px;
+        margin-top: 20px;
     }
 
 
