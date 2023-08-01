@@ -48,7 +48,6 @@ body {
 }
 
 .nav_bar {
-    /* box-shadow: 0px 5px 10px 0 #c8c8c8; */
     position: fixed;
     width: 100%;
     background-color: #c8c8c8;
@@ -75,7 +74,6 @@ body {
 
 .nav_bar .navbar_contain .menu_list {
     display: flex;
-    /* justify-content: space-between; */
     gap: 2rem;
     font-size: 1.6rem;
 }
@@ -153,7 +151,6 @@ body {
 }
 
 .about_contain {
-    /* border: 3px solid red; */
     width: 90%;
     max-width: 1200px;
     margin: auto;
@@ -493,7 +490,6 @@ body {
     .nav_bar {
         max-width: 405px;
         background-color:#f5f5f5;
-        /* margin-top: -10px; */
         opacity: 0.95;
         height: 30px;
     }
@@ -567,7 +563,6 @@ body {
     }
 
     .nav_bar .menu_list li {
-        /* margin-bottom: 3rem; */
         font-size: 2rem;
         font-weight: 500;
         color: black;
@@ -589,14 +584,6 @@ body {
         transform: rotate(-45deg);
     }
 
-
-    /* a{
-        color: #444;
-        text-decoration: none;
-        font-weight: 500;
-        transition: color 0.3s ease-in-out;
-    } */
-
     .nav_bar .navbar_contain .menu_list {
         display: flex;
         justify-content: flex-end;
@@ -610,12 +597,6 @@ body {
 
 
     .nav_bar .navbar_contain .logo {
-        /* order: 2;
-        font-size: 2rem;
-        font-weight: 600;
-        /* top: 0px; */
-        /* margin-top: -25px; */
-        /* /* color: #000;  */
         display: none;
     } 
 
@@ -627,7 +608,6 @@ body {
         justify-content: center;
         height: 20vh;
         width: 100%;
-        /* background-size: 100%; */
     }
 
     .showcase_container {
@@ -650,7 +630,6 @@ body {
 
     .showcase_container p {
         color: #f5f5f5;
-        /* padding: 0.5rem; */
         margin-top: -1rem;
         font-size: 1.2rem;
         width: 300px;
@@ -663,7 +642,6 @@ body {
         transition: color 0.5s ease-in-out;
         border-radius: 6px;
         font-weight: 600;
-        /* padding: 1px; */
         font-size: 1.5rem;
         margin-top: -1rem;
     }
@@ -678,14 +656,9 @@ body {
         display: flex;
         gap: 2rem;
         flex-direction: column;
-        /* justify-content: center;
-        align-items: center; */
-        /* justify-content: center; */
     }
 
     .about_contain {
-        /* border: 3px solid red; */
-        /* width: 1200%; */
         max-width: 500px;
     }
 
@@ -1034,7 +1007,6 @@ body {
         height: 32px;
         width: 32px;
         top: 20px;
-        /* left: 20px; */
         z-index: 5;
         opacity: 0;
     }
@@ -1118,10 +1090,7 @@ body {
     /* ############## Section ############# */
     .showcase {
         height: 45vh;
-        /* height: 230px; */
-        /* width: 80vh; */
         background: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-black-meat-western-food-banner-background-image_194600.jpg");
-        /* width: 110%; */
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
@@ -1145,7 +1114,6 @@ body {
 
     .contact-img .contact-img {
         width: 600px;
-        /* border: 2px solid red; */
         display: flex;
     }
 
@@ -1174,7 +1142,6 @@ body {
         align-items: center;
         justify-content: center;
         text-align: center;
-        /* padding: 2rem 0; */
     }
 
     .feed-img img {
@@ -1187,7 +1154,6 @@ body {
         margin: auto;
         border-radius: 50px;
         background-repeat: no-repeat;
-        /* padding: 1rem; */
         margin-bottom: 3rem;
     }
 
@@ -1343,7 +1309,6 @@ body {
 
     .nav_bar .navbar_contain .menu_list {
         display: flex;
-        /* justify-content: space-between; */
         gap: 2rem;
         font-size: 1.6rem;
     }
@@ -1368,13 +1333,14 @@ body {
     }
 
     /* ############## Section ############# */
-    /* .showcase {
+    .showcase {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50vh;
-    width: 1290px;
+    height: 30vh;
+    max-width: 1200px;
+    background-size: 100%;
 }
 
 .showcase_container {
@@ -1385,8 +1351,8 @@ body {
     height: 100%;
     font-size: 1.6rem;
     gap: 2rem;
-} */
-    /* 
+}
+    
 .showcase_container h1 {
     color: #f5f5f5;
     text-transform: uppercase;
@@ -1407,7 +1373,7 @@ body {
 .showcase_container a:hover {
     color: #f5f5f5;
     font-weight: 600;
-} */
+}
 
     /* ############ Aboutus _section ############ */
     .aboutus_sec .about_contain {
@@ -1418,11 +1384,7 @@ body {
     }
 
     .about_contain {
-        border: 3px solid red;
-        width: 90%;
-        max-width: 1000px;
-        /* margin-top: 1.5rem;  */
-        /* margin-left: 10rem; */
+        max-width: 1200px;
     }
 
     .aboutus_sec .about_contain .Text p {
@@ -1433,6 +1395,13 @@ body {
     .aboutus_sec .about_contain .Text .main_head {
         font-size: 2.2rem;
         padding-top: 1rem;
+    }
+    .aboutus_sec .about_contain .imgh{
+        background-position: center;
+        background-size: 120%;
+        background-repeat: no-repeat;
+        object-position: center;
+        object-fit: cover;
     }
 
     /* ########### Types ############### */
